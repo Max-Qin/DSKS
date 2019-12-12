@@ -11,9 +11,9 @@ int date_seat(int k, int e, char *p) {
 		p[j + 1] = '\0';
 	}
 	return 1;
-}  // 7 ¡¢ĞÜ¹¦²©
+}  // 
 /*
-	*É¾³ıÇø¼ä½áÎ² ´óÓÚÖ÷´®É¾³ıkµ½½áÎ²Çø¼ä	
+	*åˆ é™¤åŒºé—´ç»“å°¾ å¤§äºä¸»ä¸²åˆ é™¤kåˆ°ç»“å°¾åŒºé—´	
 */
 
 int add_string(int k, char *p, char *t) {
@@ -26,7 +26,7 @@ int add_string(int k, char *p, char *t) {
 	}
 	p[k] = '\0';
 	return 1;
-} //8   --- Íõçæ
+} //8   
 
 int date_string(char *p, char *t) {
 	if (!find_string(p, t))return 0;
@@ -43,4 +43,4 @@ int date_string(char *p, char *t) {
 		}
 	}
 	return 1;
-} // 9  --- ÄÏÒàæÃ
+} // 9 
