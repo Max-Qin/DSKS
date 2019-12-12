@@ -6,25 +6,25 @@ void find_num(char *t) {
 	for (int i = 0; i < strlen(t); i++) {
 		if (t[i] >= '0' && t[i] <= '9')cut++;
 	}
-	printf("Õâ¸öÎÄÕÂÊý×ÖÒ»¹²ÓÐ£º%d\n", cut);
-}  //1   ---- °¬Åô
+	printf("è¿™ä¸ªæ–‡ç« æ•°å­—ä¸€å…±æœ‰ï¼š%d\n", cut);
+}  //1   
 
 int find_space(char *t) {
 	int cut = 0;
 	for (int i = 0; i < strlen(t); i++) {
 		if (t[i] == ' ')cut++;
 	}
-	printf("Õâ¸öÎÄÕÂ¿Õ¸ñÒ»¹²ÓÐ£º%d\n", cut);
+	printf("è¿™ä¸ªæ–‡ç« ç©ºæ ¼ä¸€å…±æœ‰ï¼š%d\n", cut);
 	return cut;
-} // 2 ------  °¬Åô
+} // 2 ---
 
 void find_letter(char *t) {
 	int cut = 0;
 	for (int i = 0; i < strlen(t); i++) {
 		if ((t[i] >= 'a' && t[i] <= 'z' )|| (t[i] >= 'A' && t[i] <= 'Z'))cut++;
 	}
-	printf("Õâ¸öÎÄÕÂ×ÖÄ¸Ò»¹²ÓÐ£º%d\n", cut);
-}   // 3  ----  ½ªä¿äÁ
+	printf("è¿™ä¸ªæ–‡ç« å­—æ¯ä¸€å…±æœ‰ï¼š%d\n", cut);
+}   // 3  -
 
 void find_word(char *t) {
 	int cut = 0, temp = 0;
@@ -35,15 +35,15 @@ void find_word(char *t) {
 		}
 		if (t[i] == ' ' || t[i] == '\n')temp = 0;
 	}
-	printf("Õâ¸öÎÄÕÂ×ÖÊýÒ»¹²ÓÐ£º%d\n", cut);
-} // 4   -----   ½ªä¿äÁ
+	printf("è¿™ä¸ªæ–‡ç« å­—æ•°ä¸€å…±æœ‰ï¼š%d\n", cut);
+} // 4   ----
 
 void out_find(char *t) {
 	find_num(t);
 	find_letter(t);
 	find_space(t);
 	find_word(t);
-} // 5   ---  °¬Åô  ½ªä¿äÁ
+} // 5   --
 
 int find_string(char *p, char *t) {
 	int *next = kmp(t);
@@ -57,4 +57,4 @@ int find_string(char *p, char *t) {
 		}
 	}
 	return cut;
-} // 6   ---- ºúÃç
+} // 6   -
